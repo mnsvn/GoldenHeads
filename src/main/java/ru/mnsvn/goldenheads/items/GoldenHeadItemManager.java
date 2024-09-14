@@ -54,7 +54,7 @@ public class GoldenHeadItemManager implements ItemManager {
         ItemStack goldenHead = ItemStack.of(Material.PLAYER_HEAD);
 
         goldenHead.editMeta(SkullMeta.class, meta -> {
-            meta.displayName(Component.text()
+            meta.itemName(Component.text()
                     .resetStyle()
                     .color(NamedTextColor.GOLD)
                     .append(Component.text("Золотая голова"))
