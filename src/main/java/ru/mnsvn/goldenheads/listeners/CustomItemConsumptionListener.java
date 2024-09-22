@@ -16,14 +16,12 @@ import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
-import ru.mnsvn.goldenheads.GoldenHeads;
 import ru.mnsvn.goldenheads.items.ItemManager;
 
 import java.util.List;
 import java.util.Objects;
 
 public class CustomItemConsumptionListener implements Listener {
-    private final GoldenHeads plugin;
     private final ItemManager itemManager;
 
     private static final PotionEffect REGENERATION_EFFECT = new PotionEffect(PotionEffectType.REGENERATION, 20 * 12, 2);
@@ -33,8 +31,7 @@ public class CustomItemConsumptionListener implements Listener {
 
     private static final int HEAL_AMOUNT = 4 * 2;
 
-    public CustomItemConsumptionListener(GoldenHeads plugin, ItemManager itemManager) {
-        this.plugin = plugin;
+    public CustomItemConsumptionListener(ItemManager itemManager) {
         this.itemManager = itemManager;
     }
 

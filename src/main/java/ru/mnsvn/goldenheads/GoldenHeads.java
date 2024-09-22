@@ -26,7 +26,7 @@ public class GoldenHeads extends JavaPlugin {
                 .setIngredient('S', Material.NETHERITE_SCRAP);
         Bukkit.addRecipe(goldenHeadRecipe);
 
-        Bukkit.getPluginManager().registerEvents(new CustomItemConsumptionListener(this, goldenHeadItemManager), this);
+        Bukkit.getPluginManager().registerEvents(new CustomItemConsumptionListener(goldenHeadItemManager), this);
     }
 
 
